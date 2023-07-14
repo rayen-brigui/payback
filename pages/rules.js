@@ -27,14 +27,14 @@ const rulesData = [
     title: 'Illegal Rules',
     content: (<ol >
     <li> Max members per gang are 15 males and 3 females </li>
-    <li> wearing another gang's clothing style is bannable, a gang's mask is the most importang thing</li>
-    <li>stealing the gang's stash if you someday decide to leave is bannable </li>
-    <li>when you're the boss and you use players to farm for you and then you kick them out of the gang for no reason you get banned (rp isn't about farming)</li>
-    <li>when you kill/rob a player that went near your hood because of his job you'll get banned</li>
+    <li> wearing another gang&#39;s clothing style is bannable, a gang&#39;s mask is the most importang thing</li>
+    <li>stealing the gang&#39;s stash if you someday decide to leave is bannable </li>
+    <li>when you&#39;re the boss and you use players to farm for you and then you kick them out of the gang for no reason you get banned (rp isn&#39;t about farming)</li>
+    <li>when you kill/rob a player that went near your hood because of his job you&#39;ll get banned</li>
     <li>provoking another gang in a poor rp quality and for no reason is bannable </li>
     <li>No alliance between factions at any cost MORT RP := WIPE, New Character (that has no relation with the old character), New Life, New Story, New Objectifs 1</li>
     <li>you can start a MORT RP if you have a strong reason and you need to open a ticket about it</li>
-    <li>you don't have the right to leave your ownings to anyone else if you get a MORT RP</li>
+    <li>you don&#39;t have the right to leave your ownings to anyone else if you get a MORT RP</li>
     <li>if you get a MORT RP your new character is independant from the old one </li>
     </ol>)},
   {
