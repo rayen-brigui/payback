@@ -17,10 +17,12 @@ import logo from "@/assets/pb.png";
 import bg from "@/assets/background.png";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-const pages = ["Rules", "About Us", "Whitelist"];
+import Link from "next/link";
+const pages = ["Home", "Rules", "About Us", "Whitelist"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [selectedButton, setSelectedButton] = React.useState("Home");
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -29,6 +31,11 @@ const NavBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleButtonClick = (page) => {
+    setSelectedButton(page);
+  };
+
   return (
     <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
@@ -106,13 +113,33 @@ const NavBar = () => {
             <Image src={logo} alt="" width={200} />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            <Button
+              sx={{
+                my: 2,
+                color: "white",
+                display: "block",
+                borderBottom:
+                  selectedButton === "Home" ? "1px solid red" : "none",
+              }}
+              onClick={() => handleButtonClick("Home")}
+            >
+              <Link href={"/"}>Home</Link>
+            </Button>
+            {pages.slice(1).map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  borderBottom:
+                    selectedButton === page ? "1px solid red" : "none",
+                }}
+                onClick={() => handleButtonClick(page)}
               >
-                {page}
+                <Link href={`/${page.toLowerCase().replace(/\s/g, "")}`}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
