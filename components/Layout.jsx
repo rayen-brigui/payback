@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         className={`${styles.main}`}
       >
         <NavBar />
-        {children}
+        <div style={{ paddingTop: "50px" }}>{children}</div>
       </main>
     </div>
   );

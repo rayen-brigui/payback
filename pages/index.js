@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { FormControl,InputLabel,Select ,MenuItem,TextField,Button, Box,Typography,Grid,Chip,LinearProgress} from "@mui/material";
+import { FormControl,InputLabel,Select ,MenuItem,TextField,Button, Box,Typography,Grid,Chip,LinearProgress, Stack} from "@mui/material";
 import pic1 from '@/assets/pic1.png'
 import { useEffect, useState } from 'react';
 import { Card, Text, Metric, Flex, ProgressBar } from "@tremor/react";
@@ -88,7 +88,7 @@ And rewrite the history of GTA 5 Roleplay like never before!
 </Grid>
 </Grid>
 <Grid container sx={{backgroundColor:'rgba(16, 19, 27, 0.4)',zIndex:'2'}} minHeight={'280px'} height={'fit-content'} marginTop={'-70px'}  justifyContent={'space-evenly'} >
-<Grid container width={'380px'} height={'200px'}  margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'1px solid red'}>
+<Stack direction={'column'} spacing={3} width={'380px'} height={'200px'}  margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'3px solid red'}>
 <Typography variant="h3" component="h2" fontFamily={'fantasy'} color={'#EF3C42'}>
 {currentTime}</Typography>
 <Typography variant="h5" component="h2" >
@@ -96,19 +96,26 @@ Server Overview <br/>
 status: <Chip label="Online" color="success" />
 </Typography>
 
-</Grid>
+</Stack>
 
-<Grid item width={'380px'} height={'100%'} margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'1px solid cyan'}>
+<Stack direction={'column'} spacing={3} width={'380px'} height={'200px'}  margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'3px solid cyan'}>
+<Typography variant="h3" component="h2" fontFamily={'fantasy'} color={'cyan'}>
+Discord</Typography>
+<Typography variant="h5" component="h2" >
+Server Overview <br/>
+Memebers: <Chip label="1050" color="primary" />
+</Typography>
 
-<LinearProgress />
-</Grid>
-<Grid item width={'380px'} height={'100%'} margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'1px solid orange'}>
+</Stack>
+<Stack direction={'column'} spacing={3} width={'380px'} height={'200px'}  margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'3px solid orange'}>
+<Typography variant="h3" component="h2" fontFamily={'fantasy'} color={'orange'}>
+FIVE M</Typography>
+<Typography variant="h5" component="h2" >
+Server Overview <br/>
+Players: <Chip label="22/120" color="success" />
+</Typography>
 
-<LinearProgress />
-</Grid>
-<Grid item width={'380px'} height={'100%'} margin={1} bgcolor={'rgb(33,37,50,0.3)'} borderTop={'1px solid Green'}>
-<LinearProgress color={'warning'}/>
-</Grid>
+</Stack>
 </Grid>
 </Box>
 

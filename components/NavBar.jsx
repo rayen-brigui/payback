@@ -37,7 +37,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "transparent" }}>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
         <Toolbar disableGutters>
           <Typography
