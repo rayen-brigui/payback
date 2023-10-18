@@ -13,8 +13,6 @@ const Layout = ({ children }) => {
       </Head>
       <main
         style={{
-          background:
-            "url(https://cdn.discordapp.com/attachments/1105067826294816848/1129188467327381736/background.png)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}

@@ -125,9 +125,9 @@ const NavBar = () => {
             >
               <Link href={"/"}>Home</Link>
             </Button>
-            {pages.slice(1).map((page) => (
+            {pages.slice(1).map((page) => (<Link href={`/${page.toLowerCase().replace(/\s/g, "")}`} key={page}>
               <Button
-                key={page}
+                
                 sx={{
                   my: 2,
                   color: "white",
@@ -137,10 +137,10 @@ const NavBar = () => {
                 }}
                 onClick={() => handleButtonClick(page)}
               >
-                <Link href={`/${page.toLowerCase().replace(/\s/g, "")}`}>
+                
                   {page}
-                </Link>
-              </Button>
+                
+              </Button></Link>
             ))}
           </Box>
         </Toolbar>
