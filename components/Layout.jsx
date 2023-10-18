@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-
+import Footer from "./Footer";
 import styles from "@/styles/Home.module.css";
 import NavBar from "./NavBar";
 
@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
         <NavBar />
         <div style={{ paddingTop: "50px" }}>{children}</div>
       </main>
+      <Footer />
     </div>
   );
 };

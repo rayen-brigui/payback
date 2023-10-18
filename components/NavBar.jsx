@@ -143,6 +143,7 @@ const NavBar = () => {
               </Button></Link>
             ))}
           </Box>
+          <Button variant="contained" color="secondary" sx={{ my: 2 }}>Login / Register</Button>
         </Toolbar>
       </Container>
     </AppBar>

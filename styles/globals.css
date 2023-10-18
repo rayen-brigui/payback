@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -104,4 +105,74 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.roleplay-footer {
+  background-color: #252525;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.server-info {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.quick-links {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.quick-links a:hover {
+  color: #e994f8; /* Change to your preferred link hover color */
+}
+
+.contact {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #9c27b0;
+  color: #252525;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #560f63; /* Change to your preferred button hover color */
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
 }
