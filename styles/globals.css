@@ -160,11 +160,12 @@ a {
 .contact-button {
   display: inline-block;
   background-color: #9c27b0;
-  color: #252525;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 10px;
+  font-weight: 700;
   transition: background-color 0.3s;
 }
 

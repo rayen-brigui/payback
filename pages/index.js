@@ -64,7 +64,7 @@ export default function Home() {
   }, []);
   async function getServerPlayers() {
     const server = await axios.get(
-      "https://servers-frontend.fivem.net/api/servers/single/pkzvz7"
+      "https://servers-frontend.fivem.net/api/servers/single/567mjd"
     );
     console.log(
       `Server: ${server.data.Data.hostname} has ${server.data.Data.clients} players online`
@@ -167,7 +167,7 @@ export default function Home() {
           </Typography>
           <Typography variant="h5" component="h2">
             Server Overview <br />
-            Memebers: <Chip label="1050" color="primary" />
+            Memebers: <Chip label="470" color="primary" />
           </Typography>
         </Stack>
         <Stack
