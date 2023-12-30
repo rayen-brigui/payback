@@ -59,13 +59,17 @@ export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
   const [serverStatus, setServerStatus] = useState("");
   const [serverClients, setServerClients] = useState(0);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
   async function getServerPlayers() {
     const server = await axios.get(
       "https://servers-frontend.fivem.net/api/servers/single/567mjd"
     );
+    console.log("====================================");
+    console.log(server);
+    console.log("====================================");
+    if (server.status != 200) {
+      console.log("Server is offline");
+      return;
+    }
     console.log(
       `Server: ${server.data.Data.hostname} has ${server.data.Data.clients} players online`
     );
